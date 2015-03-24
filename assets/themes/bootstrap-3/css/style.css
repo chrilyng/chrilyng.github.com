@@ -26,8 +26,9 @@ h1, h2, h3, h4 {
   color: #dddddd;
 }
 
-.p {
+p {
   font-family: Georgia,Times,serif;
+  font-size: 1.3em;
 }
 
 .navbar-default {
