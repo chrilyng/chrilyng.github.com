@@ -9,8 +9,8 @@ tags : [framework,event]
 
 Initial impressions:
 
-* It was quite easy to setup install npm and NodeJS on Ubuntu through apt-get
+* It was quite easy to setup a local runtime for NodeJS on Ubuntu using apt-get
 
-* I understand how powerful Node and Javascript is for event based server side scripting for web applications
+* I am beginning to understand how powerful Node and Javascript is for event based server side scripting in web applications
 
 You can see my own [experiments](https://github.com/chrilyng/socket-io-chat-experiment) with the framework where I try to implement some of the suggestions from the guide.
