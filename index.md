@@ -20,6 +20,9 @@ Developing software is engaging due to the quick feedback loop and the endless p
 ### Contact
 If you would like to contact me send an email to (replacing AT): code AT siit.dk
 
+[PGP public key](/assets/pubkey.txt)
+
+
 ## Posts
 
 <ul class="posts">
