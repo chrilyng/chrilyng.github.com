@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Yet another developer blog 
-tagline: Keeping track of musings
+tagline: Keeping track of software libraries, tools and frameworks
 ---
 {% include JB/setup %}
 
@@ -11,11 +11,14 @@ I have a broad interest in all aspects of software development from apps or web 
 
 Developing software is engaging due to the quick feedback loop and the endless possibilites of realizing ideas.
 
-### Portfolio
+### Profiles
 
-* [Github profile](https://github.com/chrilyng/)
+* [Github](https://github.com/chrilyng/)
 
-* [Bitbucket profile](https://bitbucket.org/chrilyng/)
+* [Bitbucket](https://bitbucket.org/chrilyng/)
+
+### Contact
+If you would like to contact me send an email to (replacing AT): code AT siit.dk
 
 ## Posts
 
