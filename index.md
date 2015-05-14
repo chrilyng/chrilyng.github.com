@@ -7,7 +7,7 @@ tagline: Keeping myself updated on software trends
 
 ## About me
 
-I have a broad interest in most parts of software development from apps or web to databases and my experience is mostly with systems integration.
+I have a broad interest in most parts of software development from apps or web to databases.
 
 Developing software is engaging due to the quick feedback loop and the endless possibilites of realizing ideas.
 
