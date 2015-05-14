@@ -1,15 +1,17 @@
 ---
 layout: page
 title: Yet another developer blog 
-tagline: Keeping track of software libraries, tools and frameworks
+tagline: Keeping myself updated on software trends
 ---
 {% include JB/setup %}
 
 ## About me
 
-I have a broad interest in all aspects of software development from apps or web to databases but my strengths are mostly in systems integration.
+I have a broad interest in most parts of software development from apps or web to databases and my experience is mostly with systems integration.
 
 Developing software is engaging due to the quick feedback loop and the endless possibilites of realizing ideas.
+
+I made this blog to keep track of my different experiments with trends in software libraries and frameworks.
 
 ### Profiles
 
