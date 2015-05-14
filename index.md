@@ -17,8 +17,10 @@ Developing software is engaging due to the quick feedback loop and the endless p
 
 * [Bitbucket](https://bitbucket.org/chrilyng/)
 
+* [LinkedIn](https://dk.linkedin.com/pub/christian-lyngbye/19/584/424)
+
 ### Contact
-If you would like to contact me send an email to (replacing AT): code AT siit.dk
+If you would like to contact me, send an email to (replacing AT): code AT siit.dk
 
 [PGP public key](/assets/pubkey.txt)
 
