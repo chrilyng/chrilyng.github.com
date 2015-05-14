@@ -12,13 +12,11 @@ You basically turn the dial by touch and then it gradually counts down.
 ### Touch input sequence
 * First you need to get the right touch inputs from inside the graphic.
 * Then you create a vector from coordinates based on a center in the middle of the circle graphic.
-* Use trigonometry to calculate the degrees that the clock should rotate based on the movement vector.
+* Use trigonometry and then pythagoras to calculate the degrees that the clock should rotate based on the movement vector.
 
 ![TeggTimer Demo Screenshot]({{ site.url }}/assets/TeggTimerDemo.png)
 
 ### Trig code:
-
-    // Find the lengths of the triangles sides using trig
 
     //Distance to center from last touch using trig
     double lastSide = getLastTouchX()/Math.cos(Math.atan2(getLastTouchY(), getLastTouchX()));
