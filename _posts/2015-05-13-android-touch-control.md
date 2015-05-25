@@ -18,6 +18,8 @@ You basically turn the dial by touch and then it gradually counts down.
 
 ### Trig code:
 
+{% highlight java %}
+
     //Distance to center from last touch using trig
     double lastSide = getLastTouchX()/Math.cos(Math.atan2(getLastTouchY(), getLastTouchX()));
     double oppoSide = dx/Math.cos(Math.atan2(dy, dx));
@@ -28,6 +30,7 @@ You basically turn the dial by touch and then it gradually counts down.
     double b = firstSide;
     double c = oppoSide;
     double degrees = Math.toDegrees(Math.acos((Math.pow(a,2)+Math.pow(b, 2)-Math.pow(c, 2))/(2*a*b)));
+{% endhighlight %}
 
 ### Code
 You can find the rest of the code [here](https://github.com/chrilyng/tegg-timer-android)

@@ -5,15 +5,16 @@ tagline: "Fun with javascript"
 tags : [development]
 ---
 {% include JB/setup %} 
-I came upon this Javascript online game [editor](http://kvad.dk/sketch/tetris) some time ago. 
+I stumbled upon this Javascript online 2D graphics [editor](http://kvad.dk/). 
+By using the Tetris game as a source of inspiration I recreated [snake](http://kvad.dk/sketch/chrilyng/snake)
 
-I got hit with inspiration and developed the following version of snake. 
-
-You can try it [here](http://kvad.dk/sketch/chrilyng/snake)
+I post the code here as a backup.
 
 Initialization code:
 
-    // Some code is reused from http://kvad.dk/sketch/tetris
+{% highlight javascript %}
+
+    // Some code is  from http://kvad.dk/sketch/tetris
 
     var snake_block = {
 	pos_x: 8,
@@ -78,7 +79,11 @@ Initialization code:
 	    spawnApple();
     }
 
+{% endhighlight %}
+
 I even managed to use a closure here in the draw and input code:
+
+{% highlight javascript %}
 
     function keydown()
     {
@@ -123,8 +128,11 @@ I even managed to use a closure here in the draw and input code:
 	    pixel(apples[a][0], apples[a][1], fill===0?bl:rd);
 	}
     }
+{% endhighlight %}
 
 Immutable collision checks:
+
+{% highlight javascript %}
 
     function collision(x,y)
     {    
@@ -160,8 +168,11 @@ Immutable collision checks:
 	}
 	return -1;
     }
+{% endhighlight %}
 
 Game logic code:
+
+{% highlight javascript %}
 
     var time_to_move = 0;
     function _move()
@@ -219,3 +230,4 @@ Game logic code:
     }
 
     restart();
+{% endhighlight %}
