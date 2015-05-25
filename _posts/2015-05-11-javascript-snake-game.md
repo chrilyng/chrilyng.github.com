@@ -6,15 +6,14 @@ tags : [development]
 ---
 {% include JB/setup %} 
 I stumbled upon this Javascript online 2D graphics [editor](http://kvad.dk/). 
-By using the Tetris game as a source of inspiration I recreated [snake](http://kvad.dk/sketch/chrilyng/snake)
+By using the [Tetris](http://kvad.dk/sketch/tetris) game as a source of inspiration I recreated [snake](http://kvad.dk/sketch/chrilyng/snake)
 
-I post the code here as a backup.
+I have posted the code here split into the main sections.
+Most of it is reworked using the framework of the Tetris game except the loop function which is almost the same.
 
 Initialization code:
 
 {% highlight javascript %}
-
-    // Some code is  from http://kvad.dk/sketch/tetris
 
     var snake_block = {
 	pos_x: 8,
