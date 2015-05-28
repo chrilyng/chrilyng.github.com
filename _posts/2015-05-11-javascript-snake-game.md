@@ -8,14 +8,14 @@ tags : [development]
 I stumbled upon this Javascript online 2D graphics [editor](http://kvad.dk/). 
 By using the [Tetris](http://kvad.dk/sketch/tetris) game as a source of inspiration I recreated [snake](http://kvad.dk/sketch/chrilyng/snake)
 
-I have posted the code here split into the main sections.
+The following code is the most interesting excerpt.
 Most of it is reworked using the framework of the Tetris game except the loop function which is almost the same.
 
 Initialization code:
 
 {% highlight javascript %}
 
-snake_block = {
+var snake_block = {
     pos_x: 8,
     pos_y: 5}
     
@@ -34,25 +34,6 @@ var rd = color('red');
 var wh = color(99,99,99);
 
 // creation of game objects and their properties
-function restart()
-{
-    game_over = 0;
-    move_speed = 10;
-    move_dir = [1,0];
-    moves = 0;    
-    score = 0;
-    background('black');
-    
-
-    for(var x = 2; x < 14; x++) {
-        pixel(x,1,wh);
-        pixel(x,14,wh);
-        pixel(1,x,wh);
-        pixel(14,x,wh);
-    }
-        
-    spawn();
-}
 
 function spawn()
 {    
@@ -80,67 +61,7 @@ function spawnApple()
         spawnApple();
 }
 
-// control
-function keydown()
-{
-    if(key_id=='Up' && move_dir[1] != -1) {
-        if(move_dir[1] == 1)
-            speedup = 1;
-        move_dir = [0,1];            
-    }      
-    if(key_id=='Down' && move_dir[1] != 1) {
-        if(move_dir[1] == -1)
-            speedup = 1;
-        move_dir = [0,-1];
-    }
-    if(key_id=='Left' && move_dir[0] != 1) {
-        if(move_dir[0] == -1)
-            speedup = 1;
-        move_dir = [-1,0];
-    }
-    if(key_id=='Right' && move_dir[0] != -1) {
-        if(move_dir[0] == 1)
-            speedup = 1;
-        move_dir = [1,0];
-    }
-}
-
-// collision logic
-function collision(x,y)
-{    
-    if(x<2||y<2||x>13||y>13)
-    {
-        return true;
-    }
-    return tailCollision(x, y);    
-}
-
-
-function tailCollision(x, y) 
-{    
-    for(var i = 0; i < snake_block.tail.length; i++)
-    {
-        if(x == snake_block.tail[i][0] && 
-            y == snake_block.tail[i][1]) 
-        {
-            return true;
-        }
-    }
-    return false;
-}
-
-function appleCollision(x, y) 
-{    
-    for(var i = 0; i < apples.length; i++)
-    {
-        if(x == apples[i][0] && 
-            y == apples[i][1]) 
-        {
-            return i;
-        }
-    }
-    return -1;
-}
+...
 
 // drawing of dynamic objects
 function draw(fill)
@@ -202,27 +123,4 @@ function _move()
         }
     } 
 }
-
-function loop()
-{
-    write("score: "+score,0,15);
-    if(game_over == 1) {
-        for(var x = 0; x < 16; x++) {
-            for(var y=4; y < 11; y++) {
-                pixel(x,y, rd);            
-            }
-        }
-        write("GAME  OVER", 3,9);
-        write("KLIK FOR START", 1, 7);        
-        write("STYR MED PILE", 1, 5);
-        if(mouse_pressed===true)
-            restart();
-        return;
-    }
-    draw(0);
-    _move();
-    draw(1);
-}
-
-restart();
 {% endhighlight %}
